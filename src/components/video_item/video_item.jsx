@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './video_item.module.css';
+import { htmlUnescape } from 'escape-goat';
 
 const VideoItem = ({ video: { snippet } }) => {
   return (
@@ -11,7 +12,7 @@ const VideoItem = ({ video: { snippet } }) => {
           alt="video thumbnail"
         />
         <div className={styles.metadata}>
-          <p className={styles.title}>{snippet.title}</p>
+          <p className={styles.title}>{htmlUnescape(snippet.title)}</p>
           <p className={styles.channel}>{snippet.channelTitle}</p>
         </div>
       </div>
