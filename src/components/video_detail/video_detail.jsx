@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from './video_detail.module.css';
 
-const VideoDetail = ({ video, video: { snippet } }) => {
+const VideoDetail = ({ video, video: { snippet }, changeTitle }) => {
+  changeTitle(snippet.title);
   return (
     <section className={styles.detail}>
       <iframe
         className={styles.video}
         type="text/html"
+        title="youtube video player"
         width="100%"
         height="500px"
         src={`https://www.youtube.com/embed/${video.id}`}
