@@ -31,7 +31,9 @@
 }
 
 .metadata {
-  margin-left: 0.2em;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.4em;
 }
 
 .title,
@@ -46,4 +48,14 @@
 
 .channel {
   font-size: 0.6rem;
+}
+
+@media screen and (max-width: 580px) {
+  .container.grid {
+    width: 100%;
+    margin: 0 0.4em;
+  }
+  .metadata {
+    margin-left: 0.6em;
+  }
 }
