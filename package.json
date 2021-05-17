@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "escape-goat": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -35,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "webpack": "^5.37.0"
   }
 }
