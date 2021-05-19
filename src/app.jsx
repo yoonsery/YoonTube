@@ -8,6 +8,10 @@ function App({ youtube }) {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
+  const selectVideo = useCallback((video) => {
+    setSelectedVideo(video);
+  }, []);
+
   const useTitle = (initialTitle) => {
     const [title, setTitle] = useState(initialTitle);
 
@@ -19,10 +23,6 @@ function App({ youtube }) {
     useEffect(updateTitle, [title]);
     return setTitle;
   };
-
-  const selectVideo = useCallback((video) => {
-    setSelectedVideo(video);
-  }, []);
 
   const search = useCallback(
     (query) => {
