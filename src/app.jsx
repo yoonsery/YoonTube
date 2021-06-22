@@ -7,7 +7,6 @@ import VideoList from './components/video_list/video_list';
 function App({ youtube }) {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
-
   const selectVideo = useCallback((video) => {
     setSelectedVideo(video);
   }, []);
@@ -18,14 +17,16 @@ function App({ youtube }) {
     const updateTitle = () => {
       const htmlTitle = document.querySelector('title');
       htmlTitle.innerHTML = title;
-      console.log(title); // title 이 처음 클릭한 영상의 타이틀로만 고정됨
     };
     useEffect(updateTitle, [title]);
     return setTitle;
   };
 
+  const titleUpdater = useTitle('Youtube');
+
   const search = useCallback(
     (query) => {
+      // setSelectedVideo(null);
       youtube
         .search(query) //
         .then((videos) => {
@@ -48,7 +49,7 @@ function App({ youtube }) {
       <section className={styles.content}>
         {selectedVideo && (
           <div className={styles.detail}>
-            <VideoDetail video={selectedVideo} changeTitle={useTitle} />
+            <VideoDetail video={selectedVideo} changeTitle={titleUpdater} />
           </div>
         )}
         <div className={styles.list}>
