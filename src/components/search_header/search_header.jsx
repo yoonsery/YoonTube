@@ -19,13 +19,13 @@ const SearchHeader = memo(({ onSearch }) => {
     }
   };
 
-  const headerLogo = () => {};
-
-  const onLogoClick = () => {};
+  const onLogoClick = () => {
+    window.location.reload();
+  };
 
   return (
     <header className={styles.header}>
-      <div className={styles.headerLogo} onClick={onLogoClick}>
+      <div className={styles.logoContainer} onClick={onLogoClick}>
         <img src="/images/logo.png" alt="logo" className={styles.logo} />
         <h1 className={styles.title}>YouTube</h1>
       </div>
