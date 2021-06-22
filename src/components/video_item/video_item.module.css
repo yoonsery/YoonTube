@@ -1,24 +1,36 @@
 .container {
-  padding: 0.2em;
+  padding-bottom: 0.2em;
+  padding-right: 0.2em;
 }
 
 .container.grid {
-  width: 50%;
+  width: 48%;
+  margin: auto;
+  margin-bottom: 0.5em;
 }
 
 .container.list {
-  width: 100%;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+
+.container.list .title {
+  font-size: 0.7rem;
 }
 
 .video {
   width: 100%;
   height: 100%;
+  min-height: 6rem;
+  padding-top: 0.2em;
   display: flex;
-  align-items: center;
-  border: 1px solid lightgray;
-  box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53);
+  align-items: flex-start;
+  border-right: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  box-shadow: 5px 5px 10px 0px rgba(191, 191, 191, 0.53);
   cursor: pointer;
-  transition: transform 250ms ease-in;
+  transition: transform 0.2s ease-in;
 }
 
 .video:hover {
@@ -33,7 +45,8 @@
 .metadata {
   display: flex;
   flex-direction: column;
-  margin-left: 0.4em;
+  margin-left: 0.5em;
+  margin-top: 0.1em;
 }
 
 .title,
@@ -48,6 +61,7 @@
 
 .channel {
   font-size: 0.6rem;
+  margin-top: 0.3em;
 }
 
 @media screen and (max-width: 580px) {

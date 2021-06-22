@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './video_detail.module.css';
 
 const VideoDetail = ({ video, video: { snippet }, changeTitle }) => {
-  changeTitle(snippet.title);
+  useEffect(() => changeTitle(snippet.title));
   return (
     <section className={styles.detail}>
       <iframe
