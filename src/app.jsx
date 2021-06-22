@@ -26,7 +26,6 @@ function App({ youtube }) {
 
   const search = useCallback(
     (query) => {
-      // setSelectedVideo(null);
       youtube
         .search(query) //
         .then((videos) => {
@@ -49,12 +48,16 @@ function App({ youtube }) {
       <section className={styles.content}>
         {selectedVideo && (
           <div className={styles.detail}>
-            <VideoDetail video={selectedVideo} changeTitle={titleUpdater} />
+            <VideoDetail //
+              video={selectedVideo}
+              changeTitle={titleUpdater}
+            />
           </div>
         )}
         <div className={styles.list}>
           <VideoList
             videos={videos}
+            clickedVideo={selectedVideo}
             onVideoClick={selectVideo}
             display={selectedVideo ? 'list' : 'grid'}
           />
