@@ -1,5 +1,6 @@
 .container {
   padding: 0.2em;
+  margin: 0;
 }
 
 .container.grid {
@@ -62,11 +63,16 @@
   margin-top: 0.3em;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 48rem) {
   .container.grid {
     width: 100%;
     margin: 0 0.4em;
   }
+
+  .container.list {
+    margin: auto;
+  }
+
   .metadata {
     margin-left: 0.6em;
   }
