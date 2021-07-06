@@ -7,9 +7,9 @@ import VideoList from './components/video_list/video_list';
 function App({ youtube }) {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
-  const selectVideo = useCallback((video) => {
+  const selectVideo = (video) => {
     setSelectedVideo(video);
-  }, []);
+  };
 
   const useTitle = (initialTitle) => {
     const [title, setTitle] = useState(initialTitle);
@@ -22,7 +22,7 @@ function App({ youtube }) {
     return setTitle;
   };
 
-  const titleUpdater = useTitle('Youtube');
+  const titleUpdater = useTitle('YoonTube');
 
   const search = useCallback(
     (query) => {
