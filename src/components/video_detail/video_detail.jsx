@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './video_detail.module.css';
+import { htmlUnescape } from 'escape-goat';
 
 const VideoDetail = ({ video, video: { snippet }, changeTitle }) => {
   useEffect(() => changeTitle(snippet.title));
@@ -16,8 +17,8 @@ const VideoDetail = ({ video, video: { snippet }, changeTitle }) => {
         frameBorder="0"
         allowFullScreen
       ></iframe>
-      <h2>{snippet.title}</h2>
-      <h3>{snippet.channelTitle}</h3>
+      <h2 className={styles.title}>{htmlUnescape(snippet.title)}</h2>
+      <h3 className={styles.channelTitle}>{snippet.channelTitle}</h3>
       <pre className={styles.description}>{snippet.description}</pre>
     </section>
   );
