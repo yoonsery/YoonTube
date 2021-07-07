@@ -3,6 +3,7 @@ import styles from './video_detail.module.css';
 
 const VideoDetail = ({ video, video: { snippet }, changeTitle }) => {
   useEffect(() => changeTitle(snippet.title));
+
   return (
     <section className={styles.detail}>
       <iframe

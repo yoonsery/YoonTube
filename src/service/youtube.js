@@ -28,19 +28,6 @@ class Youtube {
       id: item.id.videoId,
     }));
   }
-
-  async channel(id, videos) {
-    const response = await this.youtube.get('channels', {
-      params: {
-        part: 'snippet, statistics',
-        id,
-      },
-    });
-    if (response.data.items[0].hasOwnProperty('snippet')) {
-      response.data.items[0].channelInfo = response.data.items[0].snippet;
-      delete response.data.item[0].snippet;
-    }
-  }
 }
 
 export default Youtube;
