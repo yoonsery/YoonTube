@@ -14,16 +14,14 @@ const VideoItem = ({ video, video: { snippet }, onVideoClick, display }) => {
       className={`${styles.container} ${displayType}`}
       onClick={() => onVideoClick(video)}
     >
-      <div className={styles.video}>
-        <img
-          className={styles.thumbnail}
-          src={snippet.thumbnails.medium.url}
-          alt="video thumbnail"
-        />
-        <div className={styles.metadata}>
-          <p className={styles.title}>{htmlUnescape(title)}</p>
-          <p className={styles.channel}>{snippet.channelTitle}</p>
-        </div>
+      <img
+        className={styles.thumbnail}
+        src={snippet.thumbnails.medium.url}
+        alt="video thumbnail"
+      />
+      <div className={styles.metadata}>
+        <p className={styles.title}>{htmlUnescape(title)}</p>
+        <p className={styles.channel}>{snippet.channelTitle}</p>
       </div>
     </li>
   );

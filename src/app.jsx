@@ -22,7 +22,7 @@ function App({ youtube }) {
     return setTitle;
   };
 
-  const titleUpdater = useTitle('YoonTube');
+  const changeTitle = useTitle('YoonTube');
 
   const search = useCallback(
     (query) => {
@@ -50,7 +50,7 @@ function App({ youtube }) {
           <div className={styles.detail}>
             <VideoDetail //
               video={selectedVideo}
-              changeTitle={titleUpdater}
+              changeTitle={changeTitle}
             />
           </div>
         )}

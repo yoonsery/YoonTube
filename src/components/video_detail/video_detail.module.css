@@ -1,5 +1,5 @@
 * {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Montserrat';
 }
 
 h3::after {
@@ -13,8 +13,7 @@ h3::after {
 }
 
 .detail {
-  margin: 1em;
-  padding: 0.2em;
+  margin: 1em 0.5em 1em 1em;
 }
 
 .description {

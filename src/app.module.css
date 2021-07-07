@@ -4,17 +4,16 @@
 
 .content {
   display: flex;
-  background-color: black;
   color: #f4f4f4;
   margin-top: 4.5em;
 }
 
 .detail {
-  flex: 1 1 70%;
+  flex: 1 1 75%;
 }
 
 .list {
-  flex: 1 1 30%;
+  flex: 1 1 25%;
 }
 
 @media screen and (max-width: 48rem) {
