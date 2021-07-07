@@ -1,14 +1,6 @@
-# [YoonTube]()
+# [YoonTube](https://yoontube.netlify.app/)
 
 YouTube clone site with React
-
-## Features
-
-Users are able to
-
-- see the most popular 25 videos
-- search and can watch the result of searching
-- reload the page by clicking the logo
 
 ## Skills
 
@@ -21,6 +13,14 @@ Users are able to
   <img alt="PostCSS" src="https://img.shields.io/badge/PostCSS-DD3A0A?style=flat&logo=PostCSS&logoColor=white"/>&nbsp;&nbsp;
   <img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white"/>
 </p>
+
+## Features
+
+Users are able to
+
+- see the most popular 25 videos
+- search and can watch the result of searching
+- reload the page by clicking the logo
 
 ## ✍🏻 Note
 
