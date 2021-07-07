@@ -57,15 +57,17 @@
   margin: 0;
   font-size: 0.8rem;
   font-family: 'Montserrat';
+  overflow: scroll;
 }
 
 .title {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .channel {
   font-size: 0.6rem;
   margin-top: 0.3em;
+  color: #ced4da;
 }
 
 @media screen and (max-width: 48rem) {
@@ -74,24 +76,24 @@
     margin: 0 0.4em;
   }
 
-  .title {
-    font-size: 1.1rem;
-  }
-
-  .channel {
-    font-size: 0.8rem;
-  }
-
   .container.list .metadata {
     margin-left: 0.5em;
   }
 
   .container.list .thumbnail {
     width: 40%;
-    max-width: 20rem;
+    min-width: 19rem;
   }
 
   .container.list .title {
     font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .channel {
+    font-size: 0.8rem;
   }
 }
