@@ -2,7 +2,7 @@
 
 YouTube clone site with React
 
-## Skills
+## Technologies
 
 <p>
   <img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=HTML5&logoColor=white"/>&nbsp;&nbsp;
@@ -22,7 +22,7 @@ Users are able to
 - search and can watch the result of searching
 - reload the page by clicking the logo
 
-## ✍🏻 Note
+## Note ✍🏻
 
 - Get YouTube search & video APIs using Postman
 - Hide API keys using environment variables
@@ -30,4 +30,16 @@ Users are able to
 - Use CSS Modules for each components
 - Use `escape-goat` to solve encoded issue
 - Remove clicked video from the existed video list to avoid duplication
-- To change the browser title as a video title, use custom hook 👉🏻 [custom hook reference](https://nomadcoders.co/react-hooks-introduction)
+- To change the browser title as a video title, use custom hook 👉🏻  [custom hook reference](https://nomadcoders.co/react-hooks-introduction)
+
+## Setup
+
+Install dependencies
+```sh
+$ npm install
+```
+
+Run application
+```sh
+$ npm start
+```
