@@ -20,6 +20,7 @@ Users are able to
 
 - see the most popular 25 videos
 - search and can watch the result of searching
+- see the clicked video title at browser title bar
 - reload the page by clicking the logo
 
 ## Note ✍🏻
