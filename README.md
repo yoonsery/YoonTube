@@ -31,7 +31,7 @@ Users are able to
 - Use CSS Modules for each components
 - Use `escape-goat` to solve encoded issue
 - Remove clicked video from the existed video list to avoid duplication
-- To change the browser title as a video title, use custom hook 👉🏻  [custom hook reference](https://nomadcoders.co/react-hooks-introduction)
+- To change the browser title as a video title, use custom hook 👉🏻 &nbsp; [custom hook reference](https://nomadcoders.co/react-hooks-introduction)
 
 ## Setup
 
