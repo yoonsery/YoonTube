@@ -1,6 +1,7 @@
 * {
   font-family: 'Montserrat';
 }
+
 .title {
   font-size: 1.2em;
   font-weight: 600;
@@ -22,7 +23,7 @@
 }
 
 .detail {
-  margin: 1em 0.5em 1em 1em;
+  margin: 0.5em 0.5em 1em;
 }
 
 .description {
