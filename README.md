@@ -2,6 +2,8 @@
 
 YouTube clone site with React
 
+![demo_yoontube](https://user-images.githubusercontent.com/69155242/159929044-c0e1c44f-596b-4352-942e-35f2054a30b6.gif)
+
 ## Technologies
 
 <p>
@@ -18,7 +20,7 @@ YouTube clone site with React
 
 Users are able to
 
-- see the most popular 25 videos
+- see the most popular 25 videos at first
 - search and can watch the result of searching
 - see the clicked video title at browser title bar
 - reload the page by clicking the logo
@@ -36,11 +38,13 @@ Users are able to
 ## Setup
 
 Install dependencies
+
 ```sh
 $ npm install
 ```
 
 Run application
+
 ```sh
 $ npm start
 ```
