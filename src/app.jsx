@@ -11,7 +11,7 @@ function App({ youtube }) {
     setSelectedVideo(video);
   };
 
-  const useTitle = (initialTitle) => {
+  const useTitle = useCallback((initialTitle) => {
     const [title, setTitle] = useState(initialTitle);
 
     const updateTitle = () => {
@@ -20,7 +20,7 @@ function App({ youtube }) {
     };
     useEffect(updateTitle, [title]);
     return setTitle;
-  };
+  });
 
   const changeTitle = useTitle('YoonTube');
 

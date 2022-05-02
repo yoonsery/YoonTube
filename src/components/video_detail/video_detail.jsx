@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './video_detail.module.css';
 import { htmlUnescape } from 'escape-goat';
 
 const VideoDetail = ({ video, video: { snippet }, changeTitle }) => {
-  useEffect(() => changeTitle(snippet.title));
+  changeTitle(snippet.title);
 
   return (
     <section className={styles.detail}>
