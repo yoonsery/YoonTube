@@ -31,6 +31,7 @@ function App({ youtube }) {
         .then((videos) => {
           setVideos(videos);
           setSelectedVideo(null);
+          changeTitle(query);
         });
     },
     [youtube]
