@@ -57,7 +57,7 @@
   margin: 0;
   font-size: 0.8rem;
   font-family: 'Montserrat';
-  overflow: scroll;
+  overflow: auto;
 }
 
 .title {
